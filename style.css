@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.navbar-nav > li {
+    min-width: 120px;
+    text-align: center;
+}
+
+.navbar-logo {
+    position: inline-block;
+}
+
