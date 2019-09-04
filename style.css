@@ -1,10 +1,24 @@
+html {
+    background-color: #2e3830;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #c53211;
+    font-weight: bold;
+}
+
+p {
+    color: #2e3830;
+    font-size: 16px;
 }
 
 .navbar {
     font-size: 20px;
+    background-color: #2e3830;
     border: none;
 }
 
@@ -18,5 +32,24 @@ body {
 }
 
 .page-details {
-    background: linear-gradient(#09203f, #275c85);
+    background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    float: left;
+    clear: none;  
+}
+
+.myfooter {
+    width:100%;
+    background-color: #2e3830;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    float: left;
+    clear: none;  
+}
+
+.myfooter h1 {
+    color: #e6dbc9;
 }
