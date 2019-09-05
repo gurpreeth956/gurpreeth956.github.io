@@ -1,21 +1,65 @@
 html {
     background-color: #2e3830;
+    height: 100%;
 }
 
 body {
     font-family: 'Cardo', serif;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #c53211;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
 }
 
-p {
-    color: #2e3830;
-    font-size: 16px;
+/* For Computers*/
+@media screen and (min-width : 769px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        color: #2e3830;
+        font-size: 16px;
+    }
+
+    .page-details {
+        background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
+        width: 100%;
+        height: 100%;
+        float: left;
+        clear: none;
+    }
+}
+
+/* For Phones */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        color: #2e3830;
+        font-size: 12px;
+    }
+
+    .page-details {
+        background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
+        width: 100%;
+        height: 92%;
+        float: left;
+        clear: none;
+    }
 }
 
 .navbar {
@@ -33,13 +77,14 @@ p {
     position: inline-block;
 }
 
-.page-details {
-    background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
-    padding-top: 50px;
-    padding-bottom: 20px;
+.page-header {
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
     width: 100%;
-    float: left;
-    clear: none;  
 }
 
 .myfooter {
@@ -50,8 +95,4 @@ p {
     text-align: center;
     float: left;
     clear: none;  
-}
-
-.myfooter h1 {
-    color: #e6dbc9;
 }
