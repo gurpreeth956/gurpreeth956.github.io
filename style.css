@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     background-color: #2e3830;
     height: 100%;
@@ -12,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #c53211;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: #c53211;
 }
 
 .navbar {
@@ -56,6 +64,11 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.4;
 }
 
+.projects-details {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
 .myfooter {
     position: absolute;
     width: 100%;
@@ -79,13 +92,14 @@ h1, h2, h3, h4, h5, h6 {
 
     p {
         color: #2e3830;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .page-details {
-        background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
+        background: #e6dbc9;
         text-align: center;
         clear: none;
+        min-height: 100%;
     }
 
     .about-details {
@@ -110,11 +124,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .contact-details {
-        background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
+        background: #e6dbc9;
         padding-top: 100px;
         text-align: center;
         clear: none;
-        min-height: 92%;
+        min-height: 100%;
     }
     
     .contact-header {
@@ -131,6 +145,54 @@ h1, h2, h3, h4, h5, h6 {
         height: 120px;
         border-radius: 50%;
     }
+
+    .project-element {
+        padding-top: 50px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .slideshow-container {
+        padding-top: 20px;
+        width: 100%;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    
+    .mySlides1 {
+        text-align: center;
+        display: none;
+    }
+
+    .mySlides2 {
+        text-align: center;
+        display: none;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 46%;
+        width: auto;
+        padding: 12px;
+        color: #e6dbc9;
+        background-color: #2e3830;
+        font-weight: bold;
+        font-size: 12px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+  
+    .text {
+        background-color: #2e3830;
+        color: #e6dbc9;
+        font-size: 20px;
+        padding: 8px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 /* For Phones */
@@ -145,15 +207,15 @@ h1, h2, h3, h4, h5, h6 {
 
     p {
         color: #2e3830;
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .page-details {
-        background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
+        background: #e6dbc9;
         text-align: center;
         clear: none;
         width: 100%;
-        min-height: 92%;
+        min-height: 100%;
     }
 
     .about-details {
@@ -161,8 +223,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .profile-body {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
         text-align: left;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -178,11 +240,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .contact-details {
-        background: linear-gradient(#e6dbc9, #e6dbc9, #e6dbc9);
+        background: #e6dbc9;
         padding-top: 100px;
         text-align: center;
         clear: none;
-        min-height: 92%;
+        min-height: 100%;
     }
     
     .contact-header {
@@ -199,5 +261,91 @@ h1, h2, h3, h4, h5, h6 {
         height: 80px;
         border-radius: 50%;
     }
+
+    .project-element {
+        padding-top: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 50px;
+    }
+
+    .slideshow-container {
+        padding-top: 20px;
+        width: 100%;
+        position: relative;
+        padding-bottom: 20px;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 48%;
+        width: auto;
+        padding: 8px;
+        color: #c53211;
+        background-color: #2e3830;
+        font-weight: bold;
+        font-size: 10px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+  
+    .text {
+        background-color: #2e3830;
+        color: #e6dbc9;
+        font-size: 16px;
+        padding: 8px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
+.prev {
+    left: 0;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+    
+.mySlides1 {
+    text-align: center;
+    display: none;
+}
+
+.mySlides2 {
+    text-align: center;
+    display: none;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.project-info {
+    text-align: left;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.git-contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
