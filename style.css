@@ -111,6 +111,10 @@ a {
         margin-right: 25%;
         text-align: left;
         padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .profile-resume {
         padding-bottom: 75px;
     }
 
@@ -227,7 +231,11 @@ a {
         margin-right: 5%;
         text-align: left;
         padding-top: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .profile-resume {
+        padding-bottom: 50px;
     }
 
     .profile-pic {
