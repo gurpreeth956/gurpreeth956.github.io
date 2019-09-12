@@ -40,7 +40,7 @@ a {
 .page-header {
     left: 0;
     line-height: 200px;
-    margin-top: -100px;
+    margin-top: -150px;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -282,7 +282,7 @@ a {
         top: 48%;
         width: auto;
         padding: 8px;
-        color: #c53211;
+        color: #e6dbc9;
         background-color: #2e3830;
         font-weight: bold;
         font-size: 10px;
@@ -343,9 +343,4 @@ a {
     text-align: left;
     padding-bottom: 25px;
     padding-top: 25px;
-}
-
-.git-contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
